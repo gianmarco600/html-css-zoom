@@ -98,9 +98,17 @@ footer .row{
     align-items: center;
 }
 
+.flex{
+    display: flex;
+    padding: 5px;
+}
+
+.flex a {
+    align-self: center;
+}
+
 .item{
     display: flex;
-    
     align-items: center;
 }
 
