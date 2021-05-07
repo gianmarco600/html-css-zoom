@@ -25,7 +25,6 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    border-bottom: 1px solid white;
 }
 
 .btn{
@@ -57,7 +56,11 @@ main{
 main .container .user-box{
     margin: 5px;
     width: calc(100% / 6 - 10px);
-    height: 190px;
+    min-width: 300px;
+    max-width: 450px;
+    height: calc(82vh /4 - 10px);
+    max-height: 230px;
+    min-height: 190px;
     position: relative;
 }
 
@@ -84,4 +87,56 @@ main .container .user-box .label{
 footer{
     height: 100px;
     width: 100%;
+    background-color: #222222;
+}
+
+footer .row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    
+    align-items: center;
+}
+
+.item:last-child{
+    align-self: stretch;
+    margin: 0;
+}
+
+.item .tasto{
+    text-align: center;
+    margin: 10px;
+}
+
+.item .tasto i{
+    font-size: 40px;
+}
+
+.item>*{
+    padding: 10px;
+}
+
+#active i{
+    color: #4bc800;
+}
+
+.exit{
+    background-color: #4a4a4a;
+    height: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-content: center;
+}
+
+.exit span{
+    align-self: center;
+    color: red;
 }
